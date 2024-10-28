@@ -5,17 +5,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .intro-section h1 {
     z-index: 2;
     font-weight: bolder;
-    font-size: 60px;
+    font-size: clamp(25px, 8vw, 100px);
     font-family: 'Poppins', sans-serif;
-    margin: 0 60px;
+    margin: 0 10vw;
 }
 .intro-section p {
+    font-size: clamp(16px, 2.5vw, 34px); /* This sets a minimum and a maximum for the font-size */
     z-index: 2;
+    margin-top: 10px;
 }
 
 .glassy-look {
@@ -37,8 +40,8 @@
 
 .bubble-1 {
     z-index: 1;
-    width: 210px;
-    height: 210px;
+    width: clamp(210px, 40vw, 420px);
+    height: clamp(210px, 40vw, 420px);
     background-color: #2a9d8f;
     position: absolute;
     top: -20px;
@@ -48,30 +51,30 @@
 
 .bubble-2 {
     z-index: 1;
-    width: 300px;
-    height: 300px;
+    width: clamp(300px, 50vw, 500px);
+    height: clamp(300px, 50vw, 500px);
     background-color: #f4a261;
     position: absolute;
     top: 100px;
-    right: -150px;
-    border-radius: 50% 0% 0% 50%;
+    right: -25vw;
+    border-radius: 50% 50% 50% 50%;
 }
 
 
 .bubble-3 {
     z-index: 1;
-    width: 300px;
-    height: 300px;
+    width: 50vw;
+    height: 50vw;
     background-color: #e9c46a;
     position: absolute;
-    bottom: 0;
+    bottom: -150px;
     left: -150px;
     border-radius: 0% 50% 50% 0%;
-    overflow: hidden !important;
 }
 
 .second-section {
-    z-index: 3;
+    z-index: 2;
     height: 100vh;
     background-color: black;
+    position: relative;
 }
