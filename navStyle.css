@@ -1,3 +1,7 @@
+.navbar {
+    font-family: 'Poppins', sans-serif !important; 
+}
+
 .navbar-brand {
     letter-spacing: 3px;
     color: #c24244;
@@ -61,4 +65,24 @@
     backdrop-filter: blur(2px);
     border: 1px solid rgba(255, 255, 255, 0.01);
     box-shadow: 0px 2px 4px rgb(0, 0, 0, 0.1) !important;
+}
+
+.navbar-light .nav-link {
+    color: #f8f9fa; /* Set the text color to a light shade */
+}
+
+.navbar-light .nav-link:hover {
+    color: #ffffff; /* Optional: Change text color on hover */
+}
+
+.custom-hamburger {
+    color: #2a5d93 !important; /* Change this to your desired color */
+}
+
+.custom-hamburger:hover {
+    opacity: 0.8;
+}
+
+.logo {
+    color: #2a9d8f !important;
 }

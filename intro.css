@@ -1,6 +1,5 @@
 .intro-section {
-    height: 80vh;
-    background-color: white;
+    height: 65vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -38,43 +37,102 @@
     z-index: -1;
 }
 
-.bubble-1 {
-    z-index: 1;
-    width: clamp(210px, 40vw, 420px);
-    height: clamp(210px, 40vw, 420px);
-    background-color: #2a9d8f;
-    position: absolute;
-    top: -20px;
-    left: -20px;
-    border-radius: 1px 1px 50%;
+.wavy-section {
+    position: relative;
+    background-color: #2a9d8f; /* Background color for the section */
+    padding: 50px 0; /* Adjust padding as needed */
+    clip-path: polygon(0 100%, 100% 100%, 100% 80%, 80% 80%, 60% 100%, 40% 80%, 20% 80%, 0 100%);
 }
 
-.bubble-2 {
-    z-index: 1;
-    width: clamp(300px, 50vw, 500px);
-    height: clamp(300px, 50vw, 500px);
-    background-color: #f4a261;
-    position: absolute;
-    top: 100px;
-    right: -25vw;
-    border-radius: 50% 50% 50% 50%;
+.content {
+    position: relative;
+    z-index: 2; /* Make sure the content appears above the wavy background */
+    padding: 20px; /* Adjust padding as needed */
+    color: white; /* Text color */
 }
 
+.intro-section {
+    background-color: white; /* Background color for the intro section */
+    padding: 70px 0; /* Padding for the top and bottom */
+    text-align: center; /* Center the text */
+    position: relative; /* Positioning for the SVG */
+    z-index: 2; /* Ensure it is above the SVG */
+}
 
-.bubble-3 {
-    z-index: 1;
-    width: 50vw;
-    height: 50vw;
-    background-color: #e9c46a;
-    position: absolute;
-    bottom: -150px;
-    left: -150px;
-    border-radius: 0% 50% 50% 0%;
+.intro-section h1 {
+    font-weight: bolder;
+    font-size: clamp(25px, 8vw, 100px);
+    font-family: 'Poppins', sans-serif;
+    margin: 0 10vw;
+}
+
+.intro-section p {
+    font-size: clamp(16px, 2.5vw, 34px);
+    margin-top: 10px;
+}
+
+.wavy-shape {
+    position: relative; /* Ensure the SVG is positioned below the section */
+    width: 100%; /* Full width of the screen */
+    height: auto; /* Adjust height automatically */
+    margin-top: -7px; /* Overlap slightly with the section above */
+    z-index: 1; /* Below the intro section */
 }
 
 .second-section {
-    z-index: 2;
+    background-color: white; /* Background color for the second section */
+    padding: 50px 20px; /* Padding for the section */
+    text-align: center; /* Center the text */
+    z-index: 2; /* Ensure content is above any background */
+}
+
+.second-section h1 {
+    font-size: 2em; /* Size for the section heading */
+}
+
+.second-section p {
+    font-size: 1.2em; /* Size for the section paragraph */
+}
+
+/* Optional: Styling for the divs in the second section */
+.second-section div {
+    height: 20px; /* Example height */
+    background-color: #ccc; /* Example background color */
+    margin: 10px 0; /* Spacing between divs */
+}
+
+
+.second-section {
+    padding: 0;
+    margin: 0;
+    z-index: 1;
     height: 100vh;
-    background-color: black;
+    background-color: #2a9d8f;
     position: relative;
+}
+
+
+/* HOME BUTTON */
+
+.home-button {
+    background-color: #2a9d8f; /* Button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Slightly rounded corners */
+    padding: 12px 24px; /* Vertical and horizontal padding */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.home-button:hover {
+    background-color: #2a9d8f; /* Slightly darker color on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+
+.modern-button:active {
+    transform: translateY(0); /* Reset on active */
 }
