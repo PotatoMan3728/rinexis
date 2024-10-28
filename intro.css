@@ -1,0 +1,77 @@
+.intro-section {
+    height: 80vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-section h1 {
+    z-index: 2;
+    font-weight: bolder;
+    font-size: 60px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0 60px;
+}
+.intro-section p {
+    z-index: 2;
+}
+
+.glassy-look {
+    box-shadow: 0 0 18px 3px rgba(0, 0, 0, .3);
+}
+  
+.glassy-look::after {
+    background-color: rgba(195, 195, 195, .1);
+    bottom: 10px;
+    content: '';
+    filter: blur(32px);
+    left: 10px;
+    opacity: .5;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: -1;
+}
+
+.bubble-1 {
+    z-index: 1;
+    width: 210px;
+    height: 210px;
+    background-color: #2a9d8f;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    border-radius: 1px 1px 50%;
+}
+
+.bubble-2 {
+    z-index: 1;
+    width: 300px;
+    height: 300px;
+    background-color: #f4a261;
+    position: absolute;
+    top: 100px;
+    right: -150px;
+    border-radius: 50% 0% 0% 50%;
+}
+
+
+.bubble-3 {
+    z-index: 1;
+    width: 300px;
+    height: 300px;
+    background-color: #e9c46a;
+    position: absolute;
+    bottom: 0;
+    left: -150px;
+    border-radius: 0% 50% 50% 0%;
+    overflow: hidden !important;
+}
+
+.second-section {
+    z-index: 3;
+    height: 100vh;
+    background-color: black;
+}

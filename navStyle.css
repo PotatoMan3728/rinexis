@@ -1,0 +1,64 @@
+.navbar-brand {
+    letter-spacing: 3px;
+    color: #c24244;
+}
+
+.navbar-brand:hover {
+    color: #c24244;
+}
+
+.navbar-scroll .nav-link,
+.navbar-scroll .fa-bars {
+    color: #7f4722;
+}
+
+.navbar-scrolled .nav-link,
+.navbar-scrolled .fa-bars {
+    color: #7f4722;
+}
+
+.navbar-scrolled {
+    background-color: #ffede7;
+}
+
+/* HOVER ANIMATIONS */
+
+.underline-on-hover {
+    position: relative;
+    /* Make the element a reference point for the pseudo-element */
+    display: inline-block;
+    /* Ensure the underline fits the text */
+}
+
+.underline-on-hover::after {
+    content: "";
+    /* Create a pseudo-element */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    /* Thickness of the underline */
+    background-color: black;
+    /* Color of the underline */
+    transform: scaleX(0);
+    /* Start with a scaled-down underline */
+    transform-origin: bottom left;
+    /* The starting point of the scaling */
+    transition: transform 0.3s ease;
+    /* Make the scaling smooth */
+}
+
+.underline-on-hover:hover::after {
+    transform: scaleX(1);
+    /* Scale the underline to full width on hover */
+}
+
+/* GLASSY LOOK */
+
+.glassy-look {
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    box-shadow: 0px 2px 4px rgb(0, 0, 0, 0.1) !important;
+}
