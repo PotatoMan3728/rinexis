@@ -1,24 +1,63 @@
 .second-section {
-    padding: 0;
-    margin: 0;
-    z-index: 1;
-    height: 100vh;
-    background-color: #2a9d8f;
-    position: relative;
-    text-align: center;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+  height: 190vh;
+  background-color: #2a9d8f;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
-.second-section h1, p{
-    color: white;
+.second-section h1,
+p {
+  color: white;
 }
 
 /* Optional: Styling for the divs in the second section */
 .second-section div {
-    height: 20px; /* Example height */
-    margin: 10px 0; /* Spacing between divs */
+  height: 20px;
+  /* Example height */
+  margin: 10px 0;
+  /* Spacing between divs */
 }
 
 .aboutUsParagraphDiv {
-    padding: 0 10vw;
-    text-align: justify;
+  padding: 0 10vw;
+  height: max-content !important;
+  text-align: justify;
+}
+
+/* Services Section */
+.services-div {
+  margin-top: 100px !important;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center !important;
+  width: 100% !important;
+  height: 400px !important;
+}
+
+.content-item {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+}
+
+.text-container {
+  width: 40vw;
+}
+
+.text-container h2 {
+  font-weight: 800;
+  color: #385a64;
+}
+
+#coding-glasses {
+  width: 400px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
 }
