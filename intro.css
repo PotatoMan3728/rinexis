@@ -72,6 +72,13 @@
     cursor: pointer; /* Pointer cursor on hover */
     transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    outline: none;
+    text-decoration: none;
+}
+
+.home-button:active,
+.home-button:visited {
+    color: white;
 }
 
 .home-button:hover {
