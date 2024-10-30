@@ -1,0 +1,24 @@
+.second-section {
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+    height: 100vh;
+    background-color: #2a9d8f;
+    position: relative;
+    text-align: center;
+}
+
+.second-section h1, p{
+    color: white;
+}
+
+/* Optional: Styling for the divs in the second section */
+.second-section div {
+    height: 20px; /* Example height */
+    margin: 10px 0; /* Spacing between divs */
+}
+
+.aboutUsParagraphDiv {
+    padding: 0 10vw;
+    text-align: justify;
+}

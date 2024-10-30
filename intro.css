@@ -5,18 +5,25 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    background-color: white; /* Background color for the intro section */
+    padding: 60px 0; /* Padding for the top and bottom */
+    margin-top: 40px;
+    text-align: center; /* Center the text */
+    z-index: 2; /* Ensure it is above the SVG */
 }
 
 .intro-section h1 {
     z-index: 2;
     font-weight: bolder;
-    font-size: clamp(25px, 8vw, 100px);
+    font-size: clamp(25px, 5vw + 2vh, 100px);
     font-family: 'Poppins', sans-serif;
     margin: 0 10vw;
 }
+
 .intro-section p {
-    font-size: clamp(16px, 2.5vw, 34px); /* This sets a minimum and a maximum for the font-size */
+    font-size: clamp(16px, 2vw, 34px); /* This sets a minimum and a maximum for the font-size */
     z-index: 2;
+    color: #333;
     margin-top: 10px;
 }
 
@@ -37,38 +44,11 @@
     z-index: -1;
 }
 
-.wavy-section {
-    position: relative;
-    background-color: #2a9d8f; /* Background color for the section */
-    padding: 50px 0; /* Adjust padding as needed */
-    clip-path: polygon(0 100%, 100% 100%, 100% 80%, 80% 80%, 60% 100%, 40% 80%, 20% 80%, 0 100%);
-}
-
 .content {
     position: relative;
     z-index: 2; /* Make sure the content appears above the wavy background */
     padding: 20px; /* Adjust padding as needed */
     color: white; /* Text color */
-}
-
-.intro-section {
-    background-color: white; /* Background color for the intro section */
-    padding: 70px 0; /* Padding for the top and bottom */
-    text-align: center; /* Center the text */
-    position: relative; /* Positioning for the SVG */
-    z-index: 2; /* Ensure it is above the SVG */
-}
-
-.intro-section h1 {
-    font-weight: bolder;
-    font-size: clamp(25px, 8vw, 100px);
-    font-family: 'Poppins', sans-serif;
-    margin: 0 10vw;
-}
-
-.intro-section p {
-    font-size: clamp(16px, 2.5vw, 34px);
-    margin-top: 10px;
 }
 
 .wavy-shape {
@@ -78,39 +58,6 @@
     margin-top: -7px; /* Overlap slightly with the section above */
     z-index: 1; /* Below the intro section */
 }
-
-.second-section {
-    background-color: white; /* Background color for the second section */
-    padding: 50px 20px; /* Padding for the section */
-    text-align: center; /* Center the text */
-    z-index: 2; /* Ensure content is above any background */
-}
-
-.second-section h1 {
-    font-size: 2em; /* Size for the section heading */
-}
-
-.second-section p {
-    font-size: 1.2em; /* Size for the section paragraph */
-}
-
-/* Optional: Styling for the divs in the second section */
-.second-section div {
-    height: 20px; /* Example height */
-    background-color: #ccc; /* Example background color */
-    margin: 10px 0; /* Spacing between divs */
-}
-
-
-.second-section {
-    padding: 0;
-    margin: 0;
-    z-index: 1;
-    height: 100vh;
-    background-color: #2a9d8f;
-    position: relative;
-}
-
 
 /* HOME BUTTON */
 

@@ -10,13 +10,14 @@ body {
 
 h1 {
     font-weight: bolder;
-    font-size: clamp(25px, 8vw, 100px); /* Responsive font size for h1 */
+    font-size: clamp(20px, 4vw + 1.5vh, 80px);/* Responsive font size for h1 */
     margin: 0 10vw; /* Margin for h1 */
 }
 
 p {
-    font-size: clamp(16px, 2.5vw, 34px); /* Responsive font size for paragraphs */
+    font-size: clamp(16px, 2vw, 34px); /* Responsive font size for paragraphs */
     margin: 10px 0; /* Margin for paragraphs */
+    color: #333;
 }
 
 /* Optional: Additional heading styles */
