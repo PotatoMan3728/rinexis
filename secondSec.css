@@ -89,7 +89,7 @@ p {
   }
 
   .text-container {
-    width: 60%;
+    width: 80%;
   }
   /* Adjust widths for mobile */
   .media-container {
@@ -98,7 +98,7 @@ p {
   }
 
   .service-images {
-    width: 60%; /* Full width images on mobile */
+    width: 90%; /* Full width images on mobile */
     height: auto; /* Maintain aspect ratio */
   }
 }
