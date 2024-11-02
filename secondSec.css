@@ -31,10 +31,11 @@ p {
 
 /* Services Section */
 .services-div {
-  margin-top: 10vh !important;
   display: flex;
+  gap: 10px; 
   flex-direction: column;
   align-items: center;
+  justify-content: space-between !important;
   width: 100%;
   height: 800px;
   padding: 0;
@@ -42,23 +43,28 @@ p {
 }
 
 .services-div h1 {
-  margin-bottom: 10vh !important;
+  margin-bottom: 20px !important;
 }
 
 .content-item {
   display: flex;
   flex-direction: row;
   position: relative;
+  height: max-content !important;
   gap: 4rem;
 }
 
 .text-container {
   width: 40vw;
+  height: max-content !important;
 }
 
 .text-container h2 {
   font-weight: 800;
   color: #385a64;
+}
+.media-container {
+  height: max-content !important;
 }
 
 .service-images {
@@ -68,10 +74,31 @@ p {
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
 }
 
-#second-Service {
-  margin-top: 80vh;
-}
+@media (max-width: 768px) {
+  .content-item {
+    flex-direction: column;
+    align-items: center; /* Center align to improve layout */
+    gap: 1rem;
+  }
+  #first-Service {
+    flex-direction: column-reverse;
+  }
 
-#third-Service {
-  margin-top: 80vh;
+  #third-Service {
+    flex-direction: column-reverse;
+  }
+
+  .text-container {
+    width: 60%;
+  }
+  /* Adjust widths for mobile */
+  .media-container {
+    width: 90%; /* Full width on mobile, with some padding */
+    text-align: center; /* Center-align text on small screens */
+  }
+
+  .service-images {
+    width: 60%; /* Full width images on mobile */
+    height: auto; /* Maintain aspect ratio */
+  }
 }
