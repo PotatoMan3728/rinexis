@@ -15,7 +15,7 @@
 .intro-section h1 {
     z-index: 2;
     font-weight: bolder;
-    font-size: clamp(25px, 5vw + 2vh, 100px);
+    font-size: clamp(30px, 5vw + 2vh, 100px);
     font-family: 'Poppins', sans-serif;
     margin: 0 10vw;
 }
