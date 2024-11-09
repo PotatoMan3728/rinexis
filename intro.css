@@ -43,6 +43,23 @@
     top: 10px;
     z-index: -1;
 }
+/* Remove the default icon */
+.navbar-toggler .navbar-toggler-icon {
+    background-image: none;
+}
+
+/* Create custom lines with the desired color */
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after,
+.navbar-toggler-icon {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: #2a9d8f; /* Set your custom color here */
+    margin: 5px 0;
+}
+
 
 .content {
     position: relative;

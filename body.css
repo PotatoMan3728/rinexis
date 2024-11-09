@@ -6,6 +6,7 @@ body {
     color: #333; /* Set a global text color */
     margin: 0; /* Remove default margins */
     padding: 0; /* Remove default padding */
+    height: max-content !important;
 }
 
 h1 {
