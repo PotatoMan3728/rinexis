@@ -25,6 +25,16 @@
 
     <!-- Scripts -->
     <script src="Scripts/fade-in.js"></script>
+    <script src="Scripts/email.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "jZQ2GbYKrBmz2NRi4",
+            });
+        })();
+    </script>
     <title>Rinexis</title>
 </head>
 
@@ -44,17 +54,17 @@
                     <li class="nav-item active">
                         <a class="nav-link px-3 nav-element-animation" href="#!">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link px-3 nav-element-animation" href="#!">Menu</a>
-                    </li>
                     <li class="nav-item nav-element-animation">
+                        <a class="nav-link px-3" href="Contacts.html">Contact us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 nav-element-animation" style="visibility: hidden;" href="#!">Menu</a>
+                    </li>
+                    <li class="nav-item nav-element-animation" style="visibility: hidden;">
                         <a class="nav-link px-3 nav-element-animation" href="#!">About us</a>
                     </li>
-                    <li class="nav-item nav-element-animation">
-                        <a class="nav-link px-3" href="#!">Contact us</a>
-                    </li>
                 </ul>
-    
+
                 <ul class="navbar-nav flex-row">
                     <li class="nav-item">
                         <a class="nav-link pe-3" href="#!">
@@ -75,26 +85,31 @@
             </div>
         </div>
     </nav>
-    
-    
+
+
 
     <section class="intro-section" style="padding-top: 70px;">
-        
+
         <h1>Your Solution For Upgrading your business.</h1>
         <p><strong>Happy Customers</strong> drive in more sales, it is all about the looks ;)</p>
 
         <a href="#Services" class="home-button">See More</a>
     </section>
     <svg class="wavy-shape" viewBox="0 0 1440 320">
-        <path fill="#2a9d8f" d="M0,192L30,181.3C60,171,120,149,180,144C240,139,300,149,360,160C420,171,480,181,540,176C600,171,660,149,720,160C780,171,840,213,900,229.3C960,245,1020,235,1080,213.3C1140,192,1200,160,1260,160C1320,160,1380,192,1410,213.3L1440,235L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320H0Z"></path>
+        <path fill="#2a9d8f"
+            d="M0,192L30,181.3C60,171,120,149,180,144C240,139,300,149,360,160C420,171,480,181,540,176C600,171,660,149,720,160C780,171,840,213,900,229.3C960,245,1020,235,1080,213.3C1140,192,1200,160,1260,160C1320,160,1380,192,1410,213.3L1440,235L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320H0Z">
+        </path>
     </svg>
     <section class="second-section">
         <h1>A little about us</h1>
         <div class="aboutUsParagraphDiv">
             <p>
-                We are a passionate startup dedicated to creating beautiful and functional websites tailored to meet the unique needs of our clients. 
-                With a focus on innovation and creativity, we believe that every business deserves an online presence that reflects its identity and 
-                engages its audience. Our team combines fresh ideas with technical expertise to deliver exceptional results that help businesses thrive 
+                We are a passionate startup dedicated to creating beautiful and functional websites tailored to meet the
+                unique needs of our clients.
+                With a focus on innovation and creativity, we believe that every business deserves an online presence
+                that reflects its identity and
+                engages its audience. Our team combines fresh ideas with technical expertise to deliver exceptional
+                results that help businesses thrive
                 in the digital landscape.
             </p>
         </div>
@@ -104,22 +119,25 @@
                 <div class="text-container">
                     <h2>Custom Websites</h2>
                     <p>
-                        Create a stunning online presence with our custom web design services. We craft visually appealing and user-friendly websites tailored to your brand’s identity and goals.
+                        Create a stunning online presence with our custom web design services. We craft visually
+                        appealing and user-friendly websites tailored to your brand’s identity and goals.
                     </p>
                 </div>
                 <div class="media-container">
-                    <img class="service-images" src="images/GuyDesigningWebsiteWithHugePen.jpg" alt="Description of image 1" />
+                    <img class="service-images" src="images/GuyDesigningWebsiteWithHugePen.jpg"
+                        alt="Description of image 1" />
                 </div>
             </div>
             <div id="second-Service" class="content-item">
                 <div class="media-container">
-                    <img class="service-images" src="images/EcommerceGuyAnalysingData.jpg" alt="Description of image 1" />
+                    <img class="service-images" src="images/EcommerceGuyAnalysingData.jpg"
+                        alt="Description of image 1" />
                 </div>
                 <div class="text-container">
                     <h2>E-Commerce Solutions</h2>
                     <p>
-                        Transform your retail business with our e-commerce solutions. 
-                        We specialize in setting up online stores on platforms like Shopify 
+                        Transform your retail business with our e-commerce solutions.
+                        We specialize in setting up online stores on platforms like Shopify
                         and WordPress/WooCommerce, ensuring a seamless shopping experience.
                     </p>
                 </div>
@@ -128,8 +146,8 @@
                 <div class="text-container">
                     <h2>Search Engine Optimization (SEO)</h2>
                     <p>
-                        Boost your website's visibility and drive organic traffic with 
-                        our comprehensive SEO services. We focus on on-page and off-page 
+                        Boost your website's visibility and drive organic traffic with
+                        our comprehensive SEO services. We focus on on-page and off-page
                         optimization to enhance your search engine rankings.
                     </p>
                 </div>
@@ -141,32 +159,48 @@
         <div id="our-process" class="ourProcess-section">
             <h1>Our Process</h1>
             <div class="process-step">
-              <h2>1. Consultation</h2>
-              <p>We start with a conversation to understand your goals and vision for the website, tailoring our approach to fit your business.</p>
+                <h2>1. Consultation</h2>
+                <p>We start with a conversation to understand your goals and vision for the website, tailoring our
+                    approach to fit your business.</p>
             </div>
-          
+
             <div class="process-step">
-              <h2>2. Planning</h2>
-              <p>We outline the site’s structure and design elements, ensuring we’re aligned on how it will look and function.</p>
+                <h2>2. Planning</h2>
+                <p>We outline the site’s structure and design elements, ensuring we’re aligned on how it will look and
+                    function.</p>
             </div>
-          
+
             <div class="process-step">
-              <h2>3. Design & Development</h2>
-              <p>We create a unique design and handle all development to bring your website to life, making sure it works seamlessly on all devices.</p>
+                <h2>3. Design & Development</h2>
+                <p>We create a unique design and handle all development to bring your website to life, making sure it
+                    works seamlessly on all devices.</p>
             </div>
-          
+
             <div class="process-step">
-              <h2>4. Review & Launch</h2>
-              <p>You’ll review the finished site, and once you’re happy, we’ll launch it and make it live.</p>
+                <h2>4. Review & Launch</h2>
+                <p>You’ll review the finished site, and once you’re happy, we’ll launch it and make it live.</p>
             </div>
-          
+
             <div class="process-step">
-              <h2>5. Ongoing Support</h2>
-              <p>We’re here for any updates or maintenance you need, keeping your website fresh as your business grows.</p>
+                <h2>5. Ongoing Support</h2>
+                <p>We’re here for any updates or maintenance you need, keeping your website fresh as your business
+                    grows.</p>
             </div>
         </div>
     </section>
-      
+    <section class="contact-form-section">
+        <h1 class="contact-h1">Contact Us</h1>
+        <hr class="contact-hr" />
+        <form class="contact-form" onsubmit="sendMail(event)">
+            <input class="contact-inputs" type="text" id="name" name="name" placeholder="Name" required>
+            <input class="contact-inputs" type="email" id="email" name="email" placeholder="Email" required>
+            <input class="contact-inputs" type="text" id="subject" name="subject" placeholder="subject" required>
+            <textarea class="contact-inputs" id="message" name="message" rows="4" placeholder="Your Message"
+                required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
 </body>
 
 </html>

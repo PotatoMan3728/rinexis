@@ -18,6 +18,7 @@
     font-size: clamp(30px, 5vw + 2vh, 100px);
     font-family: 'Poppins', sans-serif;
     margin: 0 10vw;
+    color: #333;
 }
 
 .intro-section p {

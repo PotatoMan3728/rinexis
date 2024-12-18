@@ -1,22 +1,28 @@
+
+
 /* Global styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Poppins', sans-serif; /* Set a global font family */
     font-size: 16px; /* Set a base font size */
     line-height: 1.5; /* Set a global line height */
     color: #333; /* Set a global text color */
-    margin: 0; /* Remove default margins */
-    padding: 0; /* Remove default padding */
     height: max-content !important;
 }
 
 h1 {
     font-weight: bolder;
-    font-size: clamp(20px, 4vw + 1.5vh, 80px);/* Responsive font size for h1 */
+    font-size: clamp(50px, 4vw + 1.5vh, 80px);/* Responsive font size for h1 */
     margin: 0 10vw; /* Margin for h1 */
 }
 
 p {
-    font-size: clamp(16px, 2vw, 34px); /* Responsive font size for paragraphs */
+    font-size: clamp(20px, 2vw, 34px); /* Responsive font size for paragraphs */
     margin: 10px 0; /* Margin for paragraphs */
     color: #333;
 }
