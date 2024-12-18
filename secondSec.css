@@ -53,11 +53,14 @@ p {
   position: relative;
   height: max-content !important;
   gap: 4rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .text-container {
   width: 40vw;
-  height: max-content !important;
+  height: inherit !important;
+  align-items: center !important;
 }
 
 .text-container h2 {

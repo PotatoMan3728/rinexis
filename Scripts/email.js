@@ -7,10 +7,10 @@ function sendMail(event) {
         message: document.getElementById("message").value
     }
 
-    emailjs.send("service_wtqir6k", "template_xddlt7d", params)
+    emailjs.send("service_2b8egxh", "template_xddlt7d", params)
         .then(function (response) {
             console.log("Email sent successfully!", response);
-            document.getElementById("contact-form").reset(); // Reset the form
+            document.getElementById("contact-form-id").reset(); // Reset the form
         }, function (error) {
             console.log("Failed to send email.", error);
         });
